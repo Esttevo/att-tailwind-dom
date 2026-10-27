@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHYA</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="/code/app.js" defer></script>
+    <link rel="stylesheet" href="/code/global.css">
+</head>
+<body class="font-serif bg-[#FAFAFA] overflow-x-hidden">
+    <header class="flex justify-between py-5 px-6 ">
+        <img class="logo" src="/code/img/Logo.svg" alt="Logo escrita EHYA">
+
+        <nav id="header-nav " class="flex flex-column align-center gap-16 py-5 px-6 hidden">
+            <a class="no-chevron " href="#">Home</a>
+            <a class="with-chevron" href="#">
+                Landings 
+                <img src="/code/img/icons/icon-chevron-down.svg" alt="lista landings">
+            </a>
+            <a class="with-chevron" href="#">
+                Pages
+                <img src="/code/img/icons/icon-chevron-down.svg" alt="lista paginas">
+            </a>
+            <a href="#">Docs</a>
+            <a href="#">Help</a>
+            <button>Get it now</button>
+        </nav>
+    
+        <img id="menu-hamburguer" src="/code/img/icons/icon-menu-hamburger.svg" alt="Menu hamburger">
+    </header>
+
+    <main>
+        <section id="section-hero" class="flex flex-col py-0 px-[clamp(1.25rem,6vw,9rem)]">
+            <div id="hero-text" class="flex flex-col py-0">
+                <div id="bar-text" class="flex flex-col align-center gap-4 py-5 px-6">
+                    <div class="stylization-bar bg-[#344563] w-[14px] h-[2px] self-center" ></div>
+                
+                    <h4 class="text-[clamp(14px,1vw,30px)] text-center leading-9 text-[#183B56];">
+                        Changing the way you
+                        go to healthcare
+                    </h4>
+                </div>
+
+                <h1 class="text-[#183B56] text-center leading-9 font-bold tracking-tight px-4 text-[clamp(32px,5vw,56px)]">
+                    Primary Care
+                    Designed for
+                    Real Life
+                </h1>
+
+                <p class="text-[#5A7184] text-center font-base leading-8 pt-4">
+                Discuss patients, share notes and documents in a secure manner and be part of a network of health professionals ready to
+                collaborate better.  
+                </p>
+
+                <form class="flex flex-col w-[clamp(280px,100%,400px)] py-8 px-0" id="form-hero" action="#">
+                    <input id="text-write" class="h-14 border-none rounded-lg p-4 " type="text" placeholder="name@youremail.com">
+                    <input id="button" class="bg-[#1565D8] text-white rounded-lg py-2 px-0 h-14" type="submit" value="Subscribe">
+                </form>
+            </div>
+            <img class="w-[clamp(180px,100%,540px)] self-center pb-12" src="/code/img/image-hero.png" alt="4 medicos sorrindo e uma medica sobrepondo os 4">
+        </section>
+
+        <section id="section-connect" class="felx flex-col py-0 px-[clamp(1.25rem,6vw,9rem)]">
+            <div id="connect-title-subtitle">
+                <h2 class="border-t border-[#E3E7ED] text-[#183B56] p-4 pt-14 leading-9 text-[clamp(28px,4vw,48px)] text-center">
+                    Connect easily. Collaborate efficiently. 
+                </h2>
+
+                 <p class="text-[#5A7184] text-center leading-8 pb-2">
+                    Rather than do things the 
+                    ypical way, we’ve created 
+                    a membership-based primary 
+                    care practice truly designed
+                    around your needs.
+                </p>
+            </div>
+
+           <img src="/code/img/Dashboard.svg" class="min-w-110" alt="dashboard de exemplo de um sistema de agendamento"> 
+        
+           <div id="cards-advantages" class="flex flex-col pb-14 border-b-1 border-[#E3E7ED]">
+                <div id="card-advantages-doctor" class="flex flex-col bg-[#FFFFFF] py-4 px-6 border border-[#f8f9fa] rounded-lg">
+                     <h2 class="text-[#1565D8] text-[clamp(24x,4vw,48px)]">01</h2>
+                     <h3 class="text-[#183B56] pb-2">For Doctor</h3>
+                     <p>
+                         You get an in-house
+                         team to guide and advocate
+                         for you through questions
+                     </p>
+                </div>
+            
+                <div class="hidden" id="card-advantages-patient">
+                     <h2>02</h2>
+                     <h3>For Patient</h3>
+                     <p>
+                         You get an in-house 
+                         team to guide and advocate
+                         for you through questions
+                     </p>
+                </div>
+            
+                <div class="hidden" id="card-advantages-clinician">
+                     <h2>03</h2>
+                     <h3>For Clinician</h3>
+                     <p>
+                         You get an in-house
+                         team to guide and advocate
+                         for you through questions
+                     </p>
+                </div>
+            </div>    
+        </section>
+
+        <section id="section-protect" class="flex flex-col content-center py-0 px-[clamp(1.25rem,6vw,9rem)]">
+            <h2 class="text-[clamp(24px,4vw,48px)] text-[#183B56] pb-8 pt-16 text-center tracking-tighter font-extrabold">
+                Protect yourself and your family first.
+            </h2>
+
+            <div id="protect-content-tips" class="flex flex-col">
+                <div class="content-tips-card flex flex-col pb-20" >
+                    <img class="w-[clamp(82px,9wv,130px)] self-center m-8" src="/code/img/icons/icon-house.svg" alt="casa">
+
+                    <h3 class="text-[clamp(16px,3vw,20px)] text-center">
+                        Stay at Home first
+                    </h3>
+
+                    <p class="text-[#5A7184] text-center pt-[0.6rem]">
+                        Our technology makes
+                        it practically impossible
+                        for any patient data breach to occur
+                    </p>
+                </div>
+            
+                <div class="content-tips-card flex flex-col pb-20">
+                    <img class="w-[clamp(82px,9wv,130px)] self-center m-8" src="/code/img/icons/icon-hand.svg" alt="mão pegando uma gota d'agua">
+
+                    <h3 class="text-[clamp(16px,3vw,20px)] text-center">
+                        Wash Your Hands Periodically
+                    </h3>
+
+                    <p class="text-[#5A7184] text-center pt-[0.6rem]">
+                        You can talk freely and confidently 
+                        about patients with other health professionals
+                         treating them
+                    </p>
+                </div>
+
+                <div class="content-tips-card flex flex-col pb-20">
+                    <img class="w-[clamp(82px,9wv,130px)] self-center m-8" src="/code/img/icons/icon-remedy.svg" alt="pilula de remedio">
+
+                    <h3 class="text-[clamp(16px,3vw,20px)] text-center">
+                        Consume more Vitamin C
+                    </h3>
+
+                    <p class="text-[#5A7184] text-center pt-[0.6rem]">
+                        A more fluid communication reduces 
+                        the risk of errors and enhances your 
+                        protection from a forensic point of view
+                    </p>
+                </div>
+
+                <div class="content-tips-card flex flex-col pb-20">
+                    <img class="w-[clamp(82px,9wv,130px)] self-center m-8" src="/code/img/icons/icon-medicament.svg" alt="garrafinha de remedio">
+
+                    <h3 class="text-[clamp(16px,3vw,20px)] text-center">
+                        Always Use Hand Sanitizer
+                    </h3>
+
+                    <p class="text-[#5A7184] text-center pt-[0.6rem]">
+                        Organize your communications
+                        by patients, by securely sharing 
+                        messages, photos and documents
+                        with colleagues.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-modern" class="flex flex-col py-0 px-[clamp(1.25rem,6vw,9rem)] mb-[4.8rem]">
+            <h2 class="text-[#183B56] px-4 py-18 pb-0 border-t border-[#E3E7ED] text-center leading-8 text-[clamp(28px,5vw,48px)]">
+                Modern clinics.
+                Smart, hassle
+                -free care.
+            </h2>
+
+            <div id="modern-cards-content" class="flex flex-col items-center">
+                <div class="modern-content-img-text-top flex flex-col justify-center items-center max-w-125 pt-14">
+                    <img class= "w[100%]" src="/code/img/image-medic.svg" alt="equipamento medico estetoscopio">
+                    <h3 class="text-[#183B56] pt-[1.8rem] pb-3.5 text-[clamp(22px,2vw,24px)] text-center">
+                        Consume more Vitamin C
+                    </h3>
+
+                    <p class="text-[#183B56] text-[clamp(14px,2v2,16px)] leading-7 text-center">
+                        A more fluid communication reduces 
+                        the risk of errors and enhances your 
+                        protection from a forensic point of view
+                    </p>
+                </div>
+
+                <div class="modern-content-img-text-bottom flex flex-col justify-center items-center max-w-125 pt-14">
+                    <img class= "w[100%]" src="/code/img/image-kid-dad.png" alt="pai com criança no colo">
+                    <h3 class="text-[#183B56] pt-[1.8rem] pb-3.5 text-[clamp(22px,2vw,24px)] text-center">
+                        Stay at Home first
+                    </h3>
+
+                    <p class="text-[#183B56] text-[clamp(14px,2v2,16px)] leading-7 text-center">
+                        Our technology makes
+                        it practically impossible
+                        for any patient data breach to occur
+                    </p>
+                </div>
+            
+                <div class="modern-content-img-text-top flex flex-col justify-center items-center max-w-125 pt-14">
+                    <img class= "w[100%]" src="img/image-kid.png" alt="Criança caminhando de mão dada">
+                    <h3 class="text-[#183B56] pt-[1.8rem] pb-3.5 text-[clamp(22px,2vw,24px)] text-center">
+                        Wash Your Hands Periodically
+                    </h3>
+
+                    <p class="text-[#183B56] text-[clamp(14px,2v2,16px)] leading-7 text-center">
+                        You can talk freely and confidently 
+                        about patients with other health professionals
+                         treating them
+                    </p>
+                </div>
+            
+                <div class="modern-content-img-text-bottom flex flex-col justify-center items-center max-w-125 pt-14">
+                    <img class= "w[100%]" src="/code/img/image-dog.png" alt="cachorro tomando água no colo">
+                    <h3 class="text-[#183B56] pt-[1.8rem] pb-3.5 text-[clamp(22px,2vw,24px)] text-center">
+                        Always Use Hand Sanitizer
+                    </h3>
+
+                    <p class="text-[#183B56] text-[clamp(14px,2v2,16px)] leading-7 text-center">
+                        Organize your communications
+                        by patients, by securely sharing 
+                        messages, photos and documents
+                        with colleagues.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-health" class="flex flex-col py-0 px-[clamp(1.25rem,6vw,9rem)] justify-center">
+            <div class="health-content-text">
+                <div class="stylization-bar h-1.25 w-7 mb-8" ></div>
+
+                <h2 class="text-[#183B56] text-[clamp(28px,5vw,40px)] text-center mb-[1.2rem] ">
+                     Track Your Health
+                     History Periodically
+                </h2>
+
+                <p class="text-[#183B56] text-center">
+                 A more fluid communication reduces 
+                 the risk of errors and enhances your
+                 protection from a forensic
+                 point of view
+                </p>
+
+                <div id="learn-more" class="flex gap-2 items-center justify-center m-12">
+                     <a class="text-[#1565D8]" href="#">LEARN MORE</a>
+                     <img src="/code/img/icons/icon-arrow-right.svg" alt="clique para ler mais">
+                </div>
+            </div>
+
+           <img id="health-image-mobile" class="w-97.5 pl-[clamp(60px,20vw,300px)]" src="/code/img/image-health-mobile.svg" alt="iphone em um site de localização de hospitais com mapa e busca">
+            <img id="health-image-desktop" class="hidden" src="/code/img/image-health-desktop.svg" alt="iphone em um site de localização de hospitais com mapa e busca">
+           <div id="count-pages" class="flex flex-col gap-[1.8rem] items-center pb-18 border-b border-[#E3E7ED]">
+                <p>1/4 screen</p>
+
+                <div id="img-arrow" class="flex gap-4">
+                    <img src="/code/img/icons/icon-button-left.svg" alt="voltar">
+                    <img src="/code/img/icons/icon-button-right.svg" alt="proximo">
+                </div>
+           </div>
+        </section>
+
+        <section id="section-resources" class="py-0 px-[clamp(1.25rem,6vw,9rem)]">
+
+            <h2 class="text-[#183B56] text-[clamp(28px,5vw,40px)] text-center pt-[4.9rem] border-t border-[#E3E7ED]">Some Resources, FAQ’s and Documentation</h2>
+            <div id="resources-cards" class="grid grid-cols-2 gap-4 pt-8 pb-18">
+                <article class="selected-resources-card bg-[#eff0f1] min-w-32.5 border border-[#E3E7ED] rounded-lg flex flex-col items-center p-[1.3rem]">
+                    <img src="/code/img/icons/icon-docs.png" alt="clique para visualizar o documento">
+
+                    <h3 class="text-[#183B56] text-[clamp(16px,4vw,20px)] text-center">Stay at Home first</h3>
+
+                    <p class="text-[14px] text-[#5A7184] text-center py-8 ">
+                        A more fluid communication 
+                        reduces the risk of errors.
+                    </p>
+
+                    <a class="text-[#1565D8] font-extrabold text-center" href="#">
+                        READ ARTICLE
+                    </a>
+                </article>
+
+                <article class="resources-card min-w-32.5 border border-[#E3E7ED] rounded-lg flex flex-col items-center p-[1.3rem]">
+                    <img src="/code/img/icons/icon-docs.png" alt="clique para visualizar o documento">
+
+                    <h3 class="text-[#183B56] text-[clamp(16px,4vw,20px)] text-center">
+                        Wash Your Hands
+                    </h3>
+
+                    <p class="text-[14px] text-[#5A7184] text-center py-8 ">
+                        A more fluid communication 
+                        reduces the risk of errors.
+                    </p>
+
+                    <a class="text-[#1565D8] font-extrabold text-center" href="#">
+                        READ ARTICLE
+                    </a>
+                </article>
+
+                <article class="resources-card min-w-32.5 border border-[#E3E7ED] rounded-lg flex flex-col items-center p-[1.3rem]">
+                    <img src="/code/img/icons/icon-docs.png" alt="clique para visualizar o documento">
+
+                    <h3 class="text-[#183B56] text-[clamp(16px,4vw,20px)] text-center">Use Hand Sanitizer</h3>
+
+                    <p class="text-[14px] text-[#5A7184] text-center py-8 ">
+                        A more fluid communication 
+                        reduces the risk of errors.
+                    </p>
+
+                    <a class="text-[#1565D8] font-extrabold text-center" href="#">
+                        READ ARTICLE
+                    </a>
+                </article>
+
+                <article class="resources-card min-w-32.5 border border-[#E3E7ED] rounded-lg flex flex-col items-center p-[1.3rem]">
+                    <img src="/code/img/icons/icon-docs.png" alt="clique para visualizar o documento">
+
+                    <h3 class="text-[#183B56] text-[clamp(16px,4vw,20px)] text-center">Consume Vitamin C</h3>
+
+                    <p class="text-[14px] text-[#5A7184] text-center py-8 ">
+                        A more fluid communication 
+                        reduces the risk of errors.
+                    </p>
+
+                    <a class="text-[#1565D8] font-extrabold text-center" href="#">
+                        READ ARTICLE
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section id="section-updates">
+            <h2>Be the first to know our updates</h2>
+
+            <form action="#">
+                <input  type="text" id="name" name="name" placeholder="Your Name">
+                <input  type="text" id="email" name="email" placeholder="Your Email">
+                <input type="submit" id="button" value="Subscribe Us"> 
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div id="footer-content-nav">
+            <nav class="nav-footer">
+                <a class="nav-title" href="#">Product</a>
+                <a class="nav-item" href="#">Landingpage</a>
+                <a class="nav-item" href="#">Features</a>
+                <a class="nav-item" href="#">Documentation</a>
+                <a class="nav-item" href="#">Referral Program</a>
+                <a class="nav-item" href="#">Pricing</a>
+            </nav>
+
+            <nav class="nav-footer">
+                <a class="nav-title" href="#">Services</a>
+                <a class="nav-item" href="#">Documentation</a>
+                <a class="nav-item" href="#">Design</a>
+                <a class="nav-item" href="#">Themes</a>
+                <a class="nav-item" href="#">Illustrations</a>
+                <a class="nav-item" href="#">UI Kit</a>
+            </nav>
+
+            <nav class="nav-footer">
+                <a class="nav-title" href="#">Company</a>
+                <a class="nav-item" href="#">About</a>
+                <a class="nav-item" href="#">Terms</a>
+                <a class="nav-item" href="#">Privacy Policy</a>
+                <a class="nav-item" href="#">Careers</a>
+            </nav>
+
+            <nav class="nav-footer">
+                <a class="nav-title" href="#">More</a>
+                <a class="nav-item" href="#">Documentation</a>
+                <a class="nav-item" href="#">License</a>
+                <a class="nav-item" href="#">Changelog</a>
+            </nav>
+        </div>
+
+        <div id="logo-text-icons">
+            <img class="logo" src="img/icons/Logo.svg" alt="Logo escrita EHYA">
+
+            <p>Build a modern and creative website with crealand</p>
+
+            <div id="icons-footer">
+                <a href="#"><img src="img/icons/Icon-google.svg" alt="redirecionamento google"></a>
+                <a href="#"><img src="img/icons/icon-twitter.svg" alt="redirecionamento email"></a>
+                <a href="#"><img src="img/icons/icon-instagram.svg" alt="redirecionamento instagram"></a>
+                <a href="#"><img src="img/icons/icon-linkedin.svg" alt="redirecionamento linkedIn"></a>
+            </div>
+        </div>
+
+        <div id="heart-text">
+            <img src="img/icons/icon-heart.svg" alt="coração branco fundo azul">
+            
+            <p>Copyright © 2019. Crafted with love.</p>
+        </div>
+    </footer>
+</body>
+</html>

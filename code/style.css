@@ -1,0 +1,963 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.vasco
+{
+    @apply text-[#183B56] text-center leading-9 font-bold tracking-tight px-4 text-[clamp(32px,5vw,56px)]"
+}
+
+:root {
+    --primary-background-color: #FAFAFA;
+    --secondary-background-color: #FFFFFF;
+
+    --primary-color: #1565D8;
+
+    --primary-title-font-color: #183B56;
+
+    --primary-subtitle-font-color: #5A7184;
+
+    --primary-font-family: "Open Sans", sans-serif;
+    --secondary-font-family: "Inter", sans-serif;
+    
+    --color-spacing: #E3E7ED;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--primary-font-family);
+    background-color: var(--primary-background-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 1.5rem;
+
+}
+
+#header-nav {
+    display: none;
+}
+
+#bar-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 3rem;
+}
+
+.stylization-bar {
+    background-color: #344563;;
+    width: 14px;
+    height: 2px;
+    justify-self: center;
+}
+
+#bar-text h4 {
+    font-size: clamp(14px, 1vw, 30px);
+    text-align: center;
+    line-height: 150%;
+    color: var(--primary-title-font-color);
+}
+
+#section-hero {
+    display: flex;
+    flex-direction: column;
+    padding: 0 clamp(1.25rem, 6vw, 9rem);  
+}
+
+#section-hero h1 {
+    color: var(--primary-title-font-color);
+    text-align: center;
+    line-height: 125%;
+    font-weight: 700;
+    letter-spacing: 0.2;
+    font-family: var(--secondary-font-family);
+    padding: 0 1rem;
+    font-size: clamp(32px, 5vw, 56px);
+}
+
+#section-hero p {
+    color: var(--primary-subtitle-font-color);
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 1rem;
+    line-height: 175%;
+}
+
+#section-hero form {
+    display: flex;
+    flex-direction: column;
+    width: clamp(280px, 100%, 400px);
+    padding: 2rem 0;
+    justify-self: center;
+}
+
+#section-hero #text-write {
+    height: 3.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-family: var(--primary-font-family);
+}
+
+#section-hero #button {
+    background-color: var(--primary-color);
+    border: none;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    height: 2.5rem;
+}
+
+#section-hero img {
+    width: clamp(280px, 100%, 540px);
+    align-self: center;
+    padding-bottom: 3rem;
+}
+
+#section-connect {
+    display: flex;
+    flex-direction: column; 
+    padding: 0 clamp(1.25rem, 6vw, 9rem); 
+}
+
+#connect-title-subtitle h2{
+    border-top: 1px solid var(--color-spacing);
+    color: var(--primary-title-font-color);
+    text-align: center;
+    padding: 1rem;
+    padding-top: 3.7rem;
+    line-height: 125%;
+    font-family: var(--secondary-font-family);
+    font-size: clamp(24px, 4vw, 48px);
+}
+
+#connect-title-subtitle p {
+    color: var(--primary-subtitle-font-color);
+    text-align: center;
+    line-height: 175%;
+    padding-bottom: 0.5rem;
+}
+
+#section-connect img {
+    width: 438px;
+    /* fica certo aos 498, nsei como fazer ainda*/
+}
+
+#cards-advantages {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3.7rem;
+    border-bottom: 1px solid var(--color-spacing);
+}
+
+#card-advantages-doctor {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-background-color);
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border: 1px solid #F8F9FA;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+#card-advantages-doctor h2 {
+    color: var(--primary-color);
+    font-size: clamp(24px, 4vw, 48px);
+    padding-bottom: 0.8rem;
+}
+
+#card-advantages-doctor h3 {
+    font-family: var(--secondary-font-family);
+    color: var(--primary-title-font-color);
+    padding-bottom: 0.5rem;
+}
+
+#card-advantages-doctor p {
+    color: var(--primary-subtitle-font-color);
+}
+
+#card-advantages-patient {
+    display: none;
+}
+
+#card-advantages-clinician {
+    display: none;
+}
+
+#section-protect {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0 clamp(1.25rem, 6vw, 9rem);
+
+}
+
+#section-protect h2  {
+    font-family: var(--secondary-font-family);
+    font-size: clamp(24px, 4vw, 48px);
+    color: var(--primary-title-font-color);
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+    text-align: center;
+    letter-spacing: 0.2;
+    font-weight: 700;
+}
+
+#protect-content-tips {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-tips-card {
+    display: flex;
+    flex-direction: column;
+    
+    padding-bottom: 5rem;
+}
+
+.content-tips-card img {
+    width: clamp(82px, 9vw, 130px);
+    align-self: center;
+    margin: 2rem;
+}
+
+.content-tips-card h3 {
+    font-family: var(--secondary-font-family);
+    font-size: clamp(16px, 3vw, 20px);
+    text-align: center;
+}
+.content-tips-card p {
+    color: var(--primary-subtitle-font-color);
+    text-align: center;
+    padding-top: 0.6rem;
+    line-height: 170%;
+}
+
+#section-modern {
+    display: flex;
+    flex-direction: column; 
+    padding: 0 clamp(1.25rem, 6vw, 9rem);
+    margin-bottom: 4.8rem;
+}
+
+#section-modern h2 {
+    color: var(--primary-title-font-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 4.5rem;
+    border-top: 1px solid var(--color-spacing);
+    font-size: clamp(28px, 5vw, 48px);
+    text-align: center;
+    line-height: 130%;
+}
+#modern-cards-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modern-content-img-text-top img {
+    width: 100%;
+}
+
+.modern-content-img-text-bottom img {
+    width: 100%;
+}
+
+.modern-content-img-text-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    padding-top: 3.5rem;
+}
+
+.modern-content-img-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    padding-top: 3.5rem;
+}
+
+.modern-content-img-text-top h3 {
+    color: var(--primary-title-font-color);
+    padding-top: 1.8rem;
+    padding-bottom: 14px;
+    font-size: clamp(22px, 2vw, 24px);
+    text-align: center;
+}
+.modern-content-img-text-bottom h3 {
+    color: var(--primary-title-font-color);
+    padding-top: 1.8rem;
+    padding-bottom: 14px;
+    font-size: clamp(22px, 2vw, 24px);
+    text-align: center;
+}
+
+.modern-content-img-text-top p {
+    color: var(--primary-title-font-color);
+   font-size: clamp(14px, 2vw, 16px);
+    line-height: 170%;
+    text-align: center;
+}
+
+.modern-content-img-text-bottom p {
+    color: var(--primary-title-font-color);
+   font-size: clamp(14px, 2vw, 16px);
+    line-height: 170%;
+    text-align: center;
+}
+
+#section-health {
+    display: flex;
+    flex-direction: column;
+    padding: 0 clamp(1.25rem, 6vw, 9rem);
+    justify-content: center;
+}
+
+#section-health .stylization-bar {
+    height: 5px;
+    width: 28px;
+    margin-bottom: 2rem;
+}
+
+#section-health h2 {
+    color: var(--primary-title-font-color);
+    font-size: clamp(28px, 5vw, 40px);
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-family: var(--secondary-font-family);
+}
+
+#section-health p {
+    color: var(--primary-subtitle-font-color);
+    text-align: center;
+}
+
+#learn-more {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+     margin: 3rem
+}
+
+#learn-more a {
+    color: var(--primary-color);
+}
+
+#health-image-mobile {
+    width: 390px;
+    padding-left: clamp(60px, 20vw, 300px);
+}
+
+#health-image-desktop {
+    display: none;
+}
+
+#count-pages {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    align-items: center;
+    padding-bottom: 4.5rem;
+    border-bottom: 1px solid var(--color-spacing);
+}
+
+#section-resources {
+    padding: 0 clamp(1.25rem, 6vw, 9rem);
+}
+
+#section-resources h2 {
+    color: var(--primary-title-font-color);
+    font-size: clamp(28px, 5vw, 40px);
+    font-family: var(--secondary-font-family);
+    text-align: center;
+    padding-top: 4.9rem;
+    border-top: 1px solid var(--color-spacing);
+}
+
+
+#resources-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 4.5rem;
+}
+
+
+.selected-resources-card {
+    background-color: #eff0f1;
+    min-width: 130px;
+    border: 1px solid var(--color-spacing);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3rem;
+}
+
+.selected-resources-card h3 {
+    font-family: var(--secondary-font-family);
+    color: var(--primary-title-font-color);
+    font-size: clamp(16px, 4vw, 20px);
+    text-align: center;
+    
+}
+
+.selected-resources-card p {
+    font-size: 14px;
+    color: var(--primary-subtitle-font-color);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.selected-resources-card a {
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.resources-card {
+    min-width: 130px;
+    border: 1px solid var(--color-spacing);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3rem;
+}
+
+.resources-card h3 {
+    font-family: var(--secondary-font-family);
+    color: var(--primary-title-font-color);
+    font-size: clamp(16px, 4vw, 20px);
+    text-align: center;
+   
+}
+
+.resources-card p {
+    font-size: 14px;
+    color: var(--primary-subtitle-font-color);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.resources-card a {
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 700;
+}
+
+#section-updates {
+    display: flex;
+    flex-direction: column;
+    padding: 0 clamp(1.9rem, 6vw, 9rem);
+    padding-bottom: 3rem;
+    gap: 1.5rem;
+}
+
+#section-updates h2 {
+    font-size: clamp(28px, 5vw, 56px);
+    color: var(--primary-title-font-color);
+    font-family: var(--secondary-font-family);
+    text-align: left;
+    padding-top: 2.5rem;
+    border-top: 1px solid #E5EFFF;
+}
+
+#section-updates form {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#section-updates #name {
+    width: clamp(260px, 100%, 390px);
+    border: 1px solid #C3CAD9;
+    padding: 1rem;
+    border-radius: 8px;
+    
+}
+
+#section-updates #email {
+    width: clamp(260px, 100%, 390px);
+    border: 1px solid #C3CAD9;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+#section-updates #button {
+    width: 150px;
+    background-color: var(--primary-color);
+    padding: 13px 24px;
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFF;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+#footer-content-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 clamp(1.5rem, 6vw, 9rem);
+    padding-top: 3rem;
+    gap: clamp(0px, 2vw, 48px);
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+    padding-bottom: 2.7rem;
+}
+
+.nav-footer .nav-item {
+    color: var(--primary-subtitle-font-color);
+    font-size: 14px;
+}
+
+.nav-footer .nav-title {
+    color: var(--primary-title-font-color);
+    font-size: clamp(16px, 2vw 18px);
+    font-weight: 700;
+}
+
+.logo {
+    width: 77px;
+}
+
+footer p {
+    color: var(--primary-subtitle-font-color);
+    font-size: 14px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#logo-text-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heart-text {
+    display: none;
+}
+
+#icons-footer {
+    display: flex;
+    gap: 0.5rem;
+}
+
+@media(min-width:402px) {
+    #health-image-mobile {
+        display: none;
+    }
+
+   #health-image-desktop {
+        display: block;
+        min-width: clamp(390px, 50vw, 600px);
+        margin-left: clamp(150px, 38vw, 10000px);   
+    }
+}
+
+@media(min-width: 498px) {
+    #section-connect img {
+        align-self: center;
+        width: 100%;
+    }
+    #health-image-desktop {
+        
+        min-width: clamp(450px, 50vw, 600px);
+          
+    }
+}
+
+@media(min-width: 792px) {
+    #health-image-desktop {
+        
+        min-width: clamp(600px, 50vw, 800px);
+          
+    }
+}
+
+@media(min-width: 1024px) {
+    #section-health {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 0.4fr;
+        padding: 0;
+        padding-right: 0;
+        margin: 0;
+        margin-left: clamp(100px, 11vw, 150px);
+        padding-bottom: 5rem;
+    }
+
+    #section-health .stylization-bar {
+        display: flex;
+        justify-self: left;  
+         margin-top: 6rem;
+    }
+    #health-content-text{
+        grid-column: 1/2;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #section-health h2 {
+        text-align: left;
+    }
+
+    #section-health p {
+        text-align: left;
+    }
+
+    #section-health #learn-more {
+        justify-content: left;
+        margin-left: 0;
+    }
+
+    #count-pages {
+        display: flex;
+        grid-column: 1/2;
+        flex-direction: row;
+        height: 200px;
+        border: none;
+    }
+
+    #count-pages #img-arrow {
+        order: -100;
+    }
+
+
+    #health-image-desktop {
+        padding: 0;
+        margin: 0;
+        padding-left: 3rem;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        min-width: clamp(600px, 50vw, 800px);
+        height: 100%;
+        padding-right: -300px;        
+    }
+
+     #health-image-desktop img {
+        min-width: clamp(600px, 50vw, 800px);
+     }
+
+    #section-connect {
+        padding: 0 clamp(100px, 15vw, 217px);
+    }
+
+    #connect-title-subtitle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-top: 1px solid var(--color-spacing);
+        padding-top: 4.5rem;
+        padding-bottom: 3rem;
+    }
+
+    #connect-title-subtitle h2 {
+        border: none;
+        padding: 0;
+        text-align: left;
+        
+    }
+
+    #connect-title-subtitle p {
+        border: none;
+        padding: 0 3rem;
+        line-height: 180%;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    #cards-advantages {
+        display: flex;
+        flex-direction: row;
+        padding-top: 4.5rem;
+        gap: 1rem;
+    }
+    #card-advantages-doctor
+    {
+        margin: 0;
+    }
+    #card-advantages-patient {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--secondary-background-color);
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        border: 1px solid #F8F9FA;
+        border-radius: 8px;
+        
+    }
+    
+    #card-advantages-patient h2 {
+        color: var(--primary-color);
+        font-size: clamp(24px, 4vw, 48px);
+        padding-bottom: 0.8rem;
+    }
+    
+    #card-advantages-patient h3 {
+        font-family: var(--secondary-font-family);
+        color: var(--primary-title-font-color);
+        padding-bottom: 0.5rem;
+    }
+    
+    #card-advantages-patient p {
+        color: var(--primary-subtitle-font-color);
+    }
+
+    #card-advantages-clinician {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--secondary-background-color);
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        border: 1px solid #F8F9FA;
+        border-radius: 8px;
+        
+    }
+    
+    #card-advantages-clinician h2 {
+        color: var(--primary-color);
+        font-size: clamp(24px, 4vw, 48px);
+        padding-bottom: 0.8rem;
+    }
+    
+    #card-advantages-clinician h3 {
+        font-family: var(--secondary-font-family);
+        color: var(--primary-title-font-color);
+        padding-bottom: 0.5rem;
+    }
+    
+    #card-advantages-clinician p {
+        color: var(--primary-subtitle-font-color);
+    }
+
+    #section-protect {
+        padding-left: clamp(200px, 21vw, 315px);
+        padding-right: clamp(150px, 13vw, 217px);
+    }
+
+    #section-protect h2 {
+        text-align: left;
+        padding-right: 28rem;
+    }  
+    
+    #protect-content-tips {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .content-tips-card h3{
+        text-align: left;
+    }
+    .content-tips-card p {
+        text-align: left;
+        padding-right: 4rem;
+    }
+
+    #section-modern {
+        padding: 0 clamp(120px, 18vw, 240px);
+    }
+    
+    #section-modern h2 {
+        text-align: left;
+        padding-right: 12rem;
+    }
+
+    #modern-cards-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+        padding-top: 5rem;
+    }
+
+    .modern-content-img-text-bottom {
+        max-width: 417px;
+    }
+
+    
+    .modern-content-img-text-top {
+        max-width: 417px;
+    }
+
+    .modern-content-img-text-top {
+        padding: 0;
+       padding-bottom: 6rem;
+    }
+
+     .modern-content-img-text-bottom {
+        padding-top: 6rem;
+     }
+
+     .modern-content-img-text-top h2 {
+        text-align: left;
+    }
+     .modern-content-img-text-bottom h2 {
+        text-align: left;
+    }
+
+     .modern-content-img-text-top p {
+        text-align: left;
+    }
+     .modern-content-img-text-bottom p {
+        text-align: left;
+    }
+
+    #section-hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 5rem 0rem;
+        padding: 0 clamp(100px, 11vw, 150px);
+        gap: 2rem;
+    }
+    #section-hero h1 {
+        text-align: left;
+        padding: 2rem 0;
+    }
+    #section-hero p {
+        text-align: left;
+        padding: 0;
+    }
+
+    #section-hero #form-hero {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #form-hero #text-write {
+        width: 78%;
+        height: 58px;
+    }
+
+    #form-hero #button {
+        width: 22%;
+        height: 58px;
+        font-weight: 700;
+    }
+
+    #bar-text {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    #resources-cards {
+        display: flex;
+        flex-direction: row;
+       
+    }
+    #section-resources {
+        padding: 0 clamp(100px, 11vw, 150px);
+    }
+
+    #section-resources h2 {
+        padding: 1rem 15rem;
+        padding-top: 5rem;
+    }
+
+    #section-updates {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem clamp(100px, 11vw, 150px);
+    }
+
+    #section-updates h2 {
+        border: none;
+    }
+
+    #footer {
+        display: grid;
+        grid-template-columns: 1.4fr 4fr;
+        padding: 3rem clamp(100px, 11vw, 150px);
+    }
+
+    #footer-content-nav {
+        display: flex;
+        order: 100;
+        gap: 2rem;
+    }
+
+    #logo-text-icons .logo {
+        margin: 0;
+        display: flex;
+        align-self: self-start;
+    }
+    
+
+    #logo-text-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    #logo-text-icons p{
+        text-align: left;
+    }
+
+    #heart-text {
+        display: flex;
+        flex-direction: column;
+        order: 1000;
+        grid-column: 1/3;
+        align-items: center;
+        padding-top: 3rem;
+    }
+
+    header {
+        padding: 1.6rem clamp(100px, 11vw, 150px);
+    }
+
+    #header-nav {
+        display: flex;
+        gap: 2.3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header-nav a {
+        color: var(--primary-title-font-color);
+        font-size: 16px;
+    }
+
+    #header-nav button {
+        background-color: var(--secondary-background-color);
+        border: 1px solid var(--primary-color);
+        border-radius: 8px;
+        color: var(--primary-color);
+        font-weight: 700;
+        padding: 13px 24px;
+    }
+
+    #menu-hamburguer {
+        display: none;
+    }
+}
