@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EHYA</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
     <script src="/code/app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">    
+    @theme {
+        --font-inter: "Inter", sans-serif;
+        --font-sans: "Open Sans", sans-serif;
+    }
+</style>
     <link rel="stylesheet" href="/code/global.css">
 </head>
-<body class="font-serif bg-[#FAFAFA] overflow-x-hidden">
+<body class="font-sans bg-[#FAFAFA] overflow-x-hidden">
     <header class="flex justify-between py-5 px-6 ">
         <img class="logo" src="/code/img/Logo.svg" alt="Logo escrita EHYA">
 
-        <nav id="header-nav " class="flex flex-column align-center gap-16 py-5 px-6 hidden">
+        <nav id="header-nav" class="flex flex-column align-center gap-16 py-5 px-6 hidden">
             <a class="no-chevron " href="#">Home</a>
             <a class="with-chevron" href="#">
                 Landings 
@@ -36,7 +46,7 @@
                 <div id="bar-text" class="flex flex-col align-center gap-4 py-5 px-6">
                     <div class="stylization-bar bg-[#344563] w-[14px] h-[2px] self-center" ></div>
                 
-                    <h4 class="text-[clamp(14px,1vw,30px)] text-center leading-9 text-[#183B56];">
+                    <h4 class="font-sans text-[clamp(14px,1vw,30px)] text-center leading-9 text-[#183B56]">
                         Changing the way you
                         go to healthcare
                     </h4>
@@ -61,7 +71,7 @@
             <img class="w-[clamp(180px,100%,540px)] self-center pb-12" src="/code/img/image-hero.png" alt="4 medicos sorrindo e uma medica sobrepondo os 4">
         </section>
 
-        <section id="section-connect" class="felx flex-col py-0 px-[clamp(1.25rem,6vw,9rem)]">
+        <section id="section-connect" class="flex flex-col py-0 px-[clamp(1.25rem,6vw,9rem)]">
             <div id="connect-title-subtitle">
                 <h2 class="border-t border-[#E3E7ED] text-[#183B56] p-4 pt-14 leading-9 text-[clamp(28px,4vw,48px)] text-center">
                     Connect easily. Collaborate efficiently. 
@@ -80,7 +90,7 @@
         
            <div id="cards-advantages" class="flex flex-col pb-14 border-b-1 border-[#E3E7ED]">
                 <div id="card-advantages-doctor" class="flex flex-col bg-[#FFFFFF] py-4 px-6 border border-[#f8f9fa] rounded-lg">
-                     <h2 class="text-[#1565D8] text-[clamp(24x,4vw,48px)]">01</h2>
+                     <h2 class="text-[#1565D8] text-[clamp(24px,4vw,48px)]">01</h2>
                      <h3 class="text-[#183B56] pb-2">For Doctor</h3>
                      <p>
                          You get an in-house
@@ -118,7 +128,7 @@
 
             <div id="protect-content-tips" class="flex flex-col">
                 <div class="content-tips-card flex flex-col pb-20" >
-                    <img class="w-[clamp(82px,9wv,130px)] self-center m-8" src="/code/img/icons/icon-house.svg" alt="casa">
+                    <img class="w-[clamp(82px,9vw,130px)] self-center m-8" src="/code/img/icons/icon-house.svg" alt="casa">
 
                     <h3 class="text-[clamp(16px,3vw,20px)] text-center">
                         Stay at Home first
@@ -190,7 +200,7 @@
                         Consume more Vitamin C
                     </h3>
 
-                    <p class="text-[#183B56] text-[clamp(14px,2v2,16px)] leading-7 text-center">
+                    <p class="text-[#183B56] text-[clamp(14px,2vw,16px)] leading-7 text-center">
                         A more fluid communication reduces 
                         the risk of errors and enhances your 
                         protection from a forensic point of view
@@ -341,7 +351,7 @@
             </div>
         </section>
 
-        <section id="section-updates">
+        <section id="section-updates" class="flex flex-col py-0 px[(clam())]">
             <h2>Be the first to know our updates</h2>
 
             <form action="#">
