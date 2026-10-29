@@ -617,7 +617,7 @@ footer p {
     #section-health .stylization-bar {
         display: flex;
         justify-self: left;  
-         margin-top: 6rem;
+        margin-top: 6rem;
     }
     #health-content-text{
         grid-column: 1/2;

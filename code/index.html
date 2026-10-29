@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-clip">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,13 +71,15 @@
             <img class="w-[clamp(180px,100%,540px)] self-center pb-12" src="/code/img/image-hero.png" alt="4 medicos sorrindo e uma medica sobrepondo os 4">
         </section>
 
-        <section id="section-connect" class="flex flex-col py-0 px-[clamp(1.25rem,6vw,9rem)]">
-            <div id="connect-title-subtitle">
-                <h2 class="border-t border-[#E3E7ED] text-[#183B56] p-4 pt-14 leading-9 text-[clamp(28px,4vw,48px)] text-center">
+        <section id="section-connect" class="flex flex-col py-0 px-[clamp(1.25rem,6vw,9rem)] lg:py-0 lg:px-[clamp(100px,15vw,217px)]">
+            <div id="connect-title-subtitle" class="lg:grid lg:grid-cols-[1fr_1fr] lg:bt lg:bt-[#E3E7ED] lg:pt-[4.5rem] lg:pb-[3rem]">
+                <h2 class="border-t border-[#E3E7ED] text-[#183B56] p-4 pt-14 leading-9 text-[clamp(28px,4vw,48px)] text-center
+                    lg:border-none lg:p-0 lg:text-left lg:leading-13">
                     Connect easily. Collaborate efficiently. 
                 </h2>
 
-                 <p class="text-[#5A7184] text-center leading-8 pb-2">
+                 <p class="text-[#5A7184] text-center leading-8 pb-2
+                    lg:border-none lg:p-[0_3rem] lg:leading-10 lg:text-left lg:text-[18px] ">
                     Rather than do things the 
                     ypical way, we’ve created 
                     a membership-based primary 
@@ -86,33 +88,33 @@
                 </p>
             </div>
 
-           <img src="/code/img/Dashboard.svg" class="min-w-110" alt="dashboard de exemplo de um sistema de agendamento"> 
+           <img src="/code/img/Dashboard.svg" class="min-w-110 min-[498px]:self-center min-[498px]:w-100%" alt="dashboard de exemplo de um sistema de agendamento"> 
         
-           <div id="cards-advantages" class="flex flex-col pb-14 border-b-1 border-[#E3E7ED]">
-                <div id="card-advantages-doctor" class="flex flex-col bg-[#FFFFFF] py-4 px-6 border border-[#f8f9fa] rounded-lg">
-                     <h2 class="text-[#1565D8] text-[clamp(24px,4vw,48px)]">01</h2>
-                     <h3 class="text-[#183B56] pb-2">For Doctor</h3>
-                     <p>
+           <div id="cards-advantages" class="flex flex-col pb-14 border-b border-[#E3E7ED] lg:flex-row lg:pt-18 lg:gap-4">
+                <div id="card-advantages-doctor" class="flex flex-col bg-[#FFFFFF] py-4 px-6 border border-[#d4d5d6] rounded-lg ">
+                     <h2 class="text-[#1565D8] text-[clamp(24px,4vw,48px)] font-bold">01</h2>
+                     <h3 class="text-[#183B56] pb-2 font-black">For Doctor</h3>
+                     <p class="text-[#5A7184]">
                          You get an in-house
                          team to guide and advocate
                          for you through questions
                      </p>
                 </div>
             
-                <div class="hidden" id="card-advantages-patient">
-                     <h2>02</h2>
-                     <h3>For Patient</h3>
-                     <p>
+                <div class="hidden lg:flex lg:flex-col lg:bg-[#FFFFFF] lg:py-4 lg:px-6 lg:border lg:border-[#d4d5d6] lg:rounded-lg" id="card-advantages-patient">
+                     <h2 class="lg:text-[#1565D8] lg:text-[clamp(24px,4vw,48px)] lg:font-bold">02</h2>
+                     <h3 class="lg:text-[#183B56] lg:pb-2 lg:font-black">For Patient</h3>
+                     <p class="text-[#5A7184]">
                          You get an in-house 
                          team to guide and advocate
                          for you through questions
                      </p>
                 </div>
             
-                <div class="hidden" id="card-advantages-clinician">
-                     <h2>03</h2>
-                     <h3>For Clinician</h3>
-                     <p>
+                <div class="hidden lg:flex lg:flex-col lg:bg-[#FFFFFF] lg:py-4 lg:px-6 lg:border lg:border-[#d4d5d6] lg:rounded-lg" id="card-advantages-clinician">
+                     <h2 class="lg:text-[#1565D8] lg:text-[clamp(24px,4vw,48px)] lg:font-bold">03</h2>
+                     <h3 class="lg:text-[#183B56] lg:pb-2 lg:font-black">For Clinician</h3>
+                     <p class="text-[#5A7184]">
                          You get an in-house
                          team to guide and advocate
                          for you through questions
@@ -249,31 +251,40 @@
             </div>
         </section>
 
-        <section id="section-health" class="flex flex-col py-0 px-[clamp(1.25rem,6vw,9rem)] justify-center">
-            <div class="health-content-text">
-                <div class="stylization-bar h-1.25 w-7 mb-8" ></div>
+        <section id="section-health" class="flex flex-col py-0 px-[clamp(1.25rem,6vw,9rem)] justify-center
+         lg:grid
+         lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]
+         lg:grid-rows-[1fr_0.4fr]
+         lg:ml-[clamp(100px,11vw,150px)]
+         lg:mr-0
+         lg:p-0
+         lg:pb-20">
+            <div class="health-content-text lg:col-start-1 lg:col-end-2 lg:justify-self-center lg:self-center">
+                <div class="stylization-bar bg-[#1565D8] border border-none rouded-xl h-1.25 w-7 mb-8 lg:flex lg:justify-self-start lg:mt-24" ></div>
 
-                <h2 class="text-[#183B56] text-[clamp(28px,5vw,40px)] text-center mb-[1.2rem] ">
+                <h2 class="text-[#183B56] text-[clamp(28px,5vw,40px)] text-center mb-[1.2rem] lg:text-left">
                      Track Your Health
                      History Periodically
                 </h2>
 
-                <p class="text-[#183B56] text-center">
+                <p class="text-[#183B56] text-center lg:text-left">
                  A more fluid communication reduces 
                  the risk of errors and enhances your
                  protection from a forensic
                  point of view
                 </p>
 
-                <div id="learn-more" class="flex gap-2 items-center justify-center m-12">
+                <div id="learn-more" class="flex gap-2 items-center justify-center m-12 lg:justify-start lg:ml-0">
                      <a class="text-[#1565D8]" href="#">LEARN MORE</a>
                      <img src="/code/img/icons/icon-arrow-right.svg" alt="clique para ler mais">
                 </div>
             </div>
 
-           <img id="health-image-mobile" class="w-97.5 pl-[clamp(60px,20vw,300px)]" src="/code/img/image-health-mobile.svg" alt="iphone em um site de localização de hospitais com mapa e busca">
-            <img id="health-image-desktop" class="hidden" src="/code/img/image-health-desktop.svg" alt="iphone em um site de localização de hospitais com mapa e busca">
-           <div id="count-pages" class="flex flex-col gap-[1.8rem] items-center pb-18 border-b border-[#E3E7ED]">
+            <img id="health-image-mobile "   class="block w-97.5 max-w-none pl-[clamp(60px,20vw,300px)] min-[402px]:hidden" src="/code/img/image-health-mobile.svg" alt="iphone em um site de localização de hospitais com mapa e busca">
+            <img id="health-image-desktop"  class="hidden min-[402px]:block w-[clamp(390px,50vw,1000px)] max-w-none shrink-0 ml-[clamp(150px,38vw,600px)] min-[498px]:w-[clamp(450px,50vw,600px)] min-[792px]:w-[clamp(600px,50vw,800px)] min-[1024px]:w-[clamp(600px,50vw,800px)] lg:h-full lg:ml-[300px]" src="/code/img/image-health-desktop.svg" alt="iphone em um site de localização de hospitais com mapa e busca">
+           
+            <div id="count-pages" class="flex flex-col gap-[1.8rem] items-center pb-18 border-b border-[#E3E7ED]
+                    lg:flex lg:h-50 lg:border-none">
                 <p>1/4 screen</p>
 
                 <div id="img-arrow" class="flex gap-4">
@@ -351,70 +362,70 @@
             </div>
         </section>
 
-        <section id="section-updates" class="flex flex-col py-0 px[(clam())]">
-            <h2>Be the first to know our updates</h2>
+        <section id="section-updates" class="flex flex-col py-0 px-[clamp(1.9rem,6vw,9rem)]">
+            <h2 class="text-[clamp(28px,5vw,56px)] text-[#183B56] font-inter text-left pt-10 border-t border-[#E5EFFF] font-extrabold">Be the first to know our updates</h2>
 
-            <form action="#">
-                <input  type="text" id="name" name="name" placeholder="Your Name">
-                <input  type="text" id="email" name="email" placeholder="Your Email">
-                <input type="submit" id="button" value="Subscribe Us"> 
+            <form class="pt-6 flex flex-col gap-4" action="#">
+                <input class="w-[clamp(260px,100%,390px)] border border-[#c3cad9] p-4 rounded-lg"  type="text" id="name" name="name" placeholder="Your Name">
+                <input class="w-[clamp(260px,100%,390px)] border border-[#c3cad9] p-4 rounded-lg" type="text" id="email" name="email" placeholder="Your Email">
+                <input class="w-37.5 bg-[#1565D8] py-3.25 px-6 rounded-lg border-hidden text-[#FFFFFF]" type="submit" id="button" value="Subscribe Us"> 
             </form>
         </section>
     </main>
 
-    <footer id="footer">
-        <div id="footer-content-nav">
-            <nav class="nav-footer">
-                <a class="nav-title" href="#">Product</a>
-                <a class="nav-item" href="#">Landingpage</a>
-                <a class="nav-item" href="#">Features</a>
-                <a class="nav-item" href="#">Documentation</a>
-                <a class="nav-item" href="#">Referral Program</a>
-                <a class="nav-item" href="#">Pricing</a>
+    <footer id="footer" class="flex flex-col items-center pb-16">
+        <div id="footer-content-nav" class="grid grid-cols-2 py-0 px-[clamp(1.9rem,6vw,9rem)] pt-12 gap-[clamp(0px,2vw,48px)] ">
+            <nav class="nav-footer flex flex-col gap-4 p-2 pb-[2.7rem]">
+                <a class="nav-title  text-[#183B56] text-[clamp(16px,2vw,18px)]" href="#">Product</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">Landingpage</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">Features</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">Documentation</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">Referral Program</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">Pricing</a>
             </nav>
 
-            <nav class="nav-footer">
-                <a class="nav-title" href="#">Services</a>
-                <a class="nav-item" href="#">Documentation</a>
-                <a class="nav-item" href="#">Design</a>
-                <a class="nav-item" href="#">Themes</a>
-                <a class="nav-item" href="#">Illustrations</a>
-                <a class="nav-item" href="#">UI Kit</a>
+            <nav class="nav-footer flex flex-col gap-4 p-2 pb-[2.7rem]">
+                <a class="nav-title  text-[#183B56] text-[clamp(16px,2vw,18px)]" href="#">Services</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">Documentation</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">Design</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">Themes</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">Illustrations</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">UI Kit</a>
             </nav>
 
-            <nav class="nav-footer">
-                <a class="nav-title" href="#">Company</a>
-                <a class="nav-item" href="#">About</a>
-                <a class="nav-item" href="#">Terms</a>
-                <a class="nav-item" href="#">Privacy Policy</a>
-                <a class="nav-item" href="#">Careers</a>
+            <nav class="nav-footer flex flex-col gap-4 p-2 pb-[2.7rem]">
+                <a class="nav-title text-[#183B56] text-[clamp(16px,2vw,18px)]" href="#">Company</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">About</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">Terms</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">Privacy Policy</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">Careers</a>
             </nav>
 
-            <nav class="nav-footer">
-                <a class="nav-title" href="#">More</a>
-                <a class="nav-item" href="#">Documentation</a>
-                <a class="nav-item" href="#">License</a>
-                <a class="nav-item" href="#">Changelog</a>
+            <nav class="nav-footer flex flex-col gap-4 p-2 pb-[2.7rem]">
+                <a class="nav-title text-[#183B56] text-[clamp(16px,2vw,18px)]" href="#">More</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">Documentation</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">License</a>
+                <a class="nav-item text-[#5A7184] text-[14px]" href="#">Changelog</a>
             </nav>
         </div>
 
-        <div id="logo-text-icons">
-            <img class="logo" src="img/icons/Logo.svg" alt="Logo escrita EHYA">
+        <div id="logo-text-icons" class="flex flex-col items-center">
+            <img class="logo w-19.25" src="/code/img/Logo.svg" alt="Logo escrita EHYA">
 
-            <p>Build a modern and creative website with crealand</p>
+            <p class="text-[#5A7184] text-[14px] text-center py-4 px-0">Build a modern and creative website with crealand</p>
 
-            <div id="icons-footer">
-                <a href="#"><img src="img/icons/Icon-google.svg" alt="redirecionamento google"></a>
-                <a href="#"><img src="img/icons/icon-twitter.svg" alt="redirecionamento email"></a>
-                <a href="#"><img src="img/icons/icon-instagram.svg" alt="redirecionamento instagram"></a>
-                <a href="#"><img src="img/icons/icon-linkedin.svg" alt="redirecionamento linkedIn"></a>
+            <div id="icons-footer" class="flex gap-2">
+                <a href="#"><img src="/code/img/icons/Icon-google.svg" alt="redirecionamento google"></a>
+                <a href="#"><img src="/code/img/icons/icon-twitter.svg" alt="redirecionamento email"></a>
+                <a href="#"><img src="/code/img/icons/icon-instagram.svg" alt="redirecionamento instagram"></a>
+                <a href="#"><img src="/code/img/icons/icon-linkedin.svg" alt="redirecionamento linkedIn"></a>
             </div>
         </div>
 
-        <div id="heart-text">
-            <img src="img/icons/icon-heart.svg" alt="coração branco fundo azul">
+        <div id="heart-text" class="hidden">
+            <img src="/code/img/icons/icon-heart.svg" alt="coração branco fundo azul">
             
-            <p>Copyright © 2019. Crafted with love.</p>
+            <p class="text-[#5A7184] text-[14px] text-center py-4 px-0">Copyright © 2019. Crafted with love.</p>
         </div>
     </footer>
 </body>
