@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="/code/app.js" defer></script>
 <style type="text/tailwindcss">    
     @theme {
         --font-inter: "Inter", sans-serif;
@@ -95,7 +96,7 @@
            <img src="/code/img/Dashboard.svg" class="min-w-110 min-[498px]:self-center min-[498px]:w-100%" alt="dashboard de exemplo de um sistema de agendamento"> 
         
            <div id="cards-advantages" class="flex flex-col pb-14 border-b border-[#E3E7ED] lg:flex-row lg:pt-18 lg:gap-4">
-                <div id="card-advantages-doctor" class="flex flex-col bg-[#FFFFFF] py-4 px-6 border border-[#d4d5d6] rounded-lg ">
+                <div id="card-advantages-doctor" class="card flex flex-col bg-[#FFFFFF] py-4 px-6 border border-[#d4d5d6] rounded-lg ">
                      <h2 class="text-[#1565D8] text-[clamp(24px,4vw,48px)] font-bold">01</h2>
                      <h3 class="text-[#183B56] pb-2 font-black">For Doctor</h3>
                      <p class="text-[#5A7184]">
@@ -104,8 +105,8 @@
                          for you through questions
                      </p>
                 </div>
-            
-                <div class="hidden lg:flex lg:flex-col lg:bg-[#FFFFFF] lg:py-4 lg:px-6 lg:border lg:border-[#d4d5d6] lg:rounded-lg" id="card-advantages-patient">
+                
+                <div class="card hidden lg:flex lg:flex-col bg-[#FFFFFF] lg:py-4 lg:px-6 lg:border lg:border-[#d4d5d6] lg:rounded-lg" id="card-advantages-patient">
                      <h2 class="lg:text-[#1565D8] lg:text-[clamp(24px,4vw,48px)] lg:font-bold">02</h2>
                      <h3 class="lg:text-[#183B56] lg:pb-2 lg:font-black">For Patient</h3>
                      <p class="text-[#5A7184]">
@@ -115,7 +116,7 @@
                      </p>
                 </div>
             
-                <div class="hidden lg:flex lg:flex-col lg:bg-[#FFFFFF] lg:py-4 lg:px-6 lg:border lg:border-[#d4d5d6] lg:rounded-lg" id="card-advantages-clinician">
+                <div class="card hidden lg:flex lg:flex-col bg-[#FFFFFF] lg:py-4 lg:px-6 lg:border lg:border-[#d4d5d6] lg:rounded-lg" id="card-advantages-clinician">
                      <h2 class="lg:text-[#1565D8] lg:text-[clamp(24px,4vw,48px)] lg:font-bold">03</h2>
                      <h3 class="lg:text-[#183B56] lg:pb-2 lg:font-black">For Clinician</h3>
                      <p class="text-[#5A7184]">
@@ -276,12 +277,12 @@
             <div class="health-content-text lg:col-start-1 lg:col-end-2 lg:justify-self-center lg:self-center">
                 <div class="stylization-bar bg-[#1565D8] border border-none rouded-xl h-1.25 w-7 mb-8 lg:flex lg:justify-self-start lg:mt-24" ></div>
 
-                <h2 class="text-[#183B56] text-[clamp(28px,5vw,40px)] text-center mb-[1.2rem] lg:text-left">
+                <h2 id="title-health" class="text-[#183B56] text-[clamp(28px,5vw,40px)] text-center mb-[1.2rem] lg:text-left">
                      Track Your Health
                      History Periodically
                 </h2>
 
-                <p class="text-[#183B56] text-center lg:text-left">
+                <p id="subtitle-health" class="text-[#183B56] text-center lg:text-left">
                  A more fluid communication reduces 
                  the risk of errors and enhances your
                  protection from a forensic
@@ -299,11 +300,11 @@
            
             <div id="count-pages" class="flex flex-col gap-[1.8rem] items-center pb-18 border-b border-[#E3E7ED]
                     lg:flex lg:h-50 lg:border-none">
-                <p>1/4 screen</p>
+                <p id="page-counter">1/4 screen</p>
 
                 <div id="img-arrow" class="flex gap-4">
-                    <img src="/code/img/icons/icon-button-left.svg" alt="voltar">
-                    <img src="/code/img/icons/icon-button-right.svg" alt="proximo">
+                    <img id="icon-left" src="/code/img/icons/icon-button-left.svg" alt="voltar">
+                    <img id="icon-right" src="/code/img/icons/icon-button-right.svg" alt="proximo">
                 </div>
            </div>
         </section>
@@ -384,7 +385,7 @@
             <h2 class="text-[clamp(28px,5vw,56px)] text-[#183B56] font-inter text-left pt-10 border-t border-[#E5EFFF] font-extrabold
                 lg:border-none">Be the first to know our updates</h2>
 
-            <form class="pt-6 flex flex-col gap-4" action="#">
+            <form id="name-email" class="pt-6 flex flex-col gap-4" action="#">
                 <input class="w-[clamp(260px,100%,390px)] border border-[#c3cad9] p-4 rounded-lg"  type="text" id="name" name="name" placeholder="Your Name">
                 <input class="w-[clamp(260px,100%,390px)] border border-[#c3cad9] p-4 rounded-lg" type="text" id="email" name="email" placeholder="Your Email">
                 <input class="w-37.5 bg-[#1565D8] py-3.25 px-6 rounded-lg border-hidden text-[#FFFFFF]" type="submit" id="button" value="Subscribe Us"> 
